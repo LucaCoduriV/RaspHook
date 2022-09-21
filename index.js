@@ -14,3 +14,7 @@ webhookHandler.on("event", function (repo, data) {});
 webhookHandler.on("reponame", function (event, data) {});
 
 webhookHandler.on("error", function (err, req, res) {});
+
+app.listen(80, () => {
+    console.log(`webhook listening on port ${port}`);
+});
