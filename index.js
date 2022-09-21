@@ -18,6 +18,7 @@ webhookHandler.on("*", async function (event, repo, data) {
                 if (error !== null) {
                     reject(error);
                 }
+                console.log(stdout);
                 resolve();
             });
         });
