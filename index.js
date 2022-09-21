@@ -11,6 +11,7 @@ app.use(webhookHandler); // use our middleware
 // Now could handle following events
 webhookHandler.on("*", function (event, repo, data) {
     console.log("Received a webhook event:", event, "for", repo);
+    console.log(data);
 });
 
 // webhookHandler.on("event", function (repo, data) {});
@@ -19,6 +20,6 @@ webhookHandler.on("*", function (event, repo, data) {
 
 // webhookHandler.on("error", function (err, req, res) {});
 
-app.listen(80, () => {
+app.listen(3002, () => {
     console.log(`webhook listening on port ${port}`);
 });
