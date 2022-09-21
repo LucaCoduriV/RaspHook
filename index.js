@@ -21,5 +21,5 @@ webhookHandler.on("*", function (event, repo, data) {
 // webhookHandler.on("error", function (err, req, res) {});
 
 app.listen(3002, () => {
-    console.log(`webhook listening on port ${port}`);
+    console.log(`webhook listening on port ${3002}`);
 });
